@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import ListTimers from './components/ListTimers';
+import NewTimer from './components/NewTimer';
+import './styles/App.css';
+
+const Title = styled.h1`
+  margin: 0 0 30px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <Title>Timers App</Title>
+      <NewTimer/>
+      <ListTimers/>
     </div>
   );
 }
