@@ -11,6 +11,11 @@ const Content = styled.div`
 const Title = styled.h3`
   font-size: 20px;
   font-weight: 700;
+  @media screen and (max-width: 500px){
+    &{
+      display: none;
+    }
+  }
 `;
 const Input = styled.input`
   padding: 5px 8px;

@@ -8,6 +8,11 @@ const Title = styled.h1`
   font-size: 48px;
   font-weight: 700;
   text-align: center;
+  @media screen and (max-width: 500px){
+    &{
+      font-size: 36px;
+    }
+  }
 `;
 
 function App() {

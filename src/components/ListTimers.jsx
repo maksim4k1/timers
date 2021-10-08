@@ -8,6 +8,17 @@ const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  @media screen and (max-width: 800px){
+    &{
+      margin: 30px 0 0;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 480px){
+    &{
+      grid-template-columns: 1fr;
+    }
+  }
 `;
 
 function ListTimers ({timers}) {

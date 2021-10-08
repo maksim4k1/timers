@@ -20,6 +20,11 @@ const Button = styled.button`
   padding: 3px 10px;
   border: 2px solid #d6d6d6;
   background: #ffffff;
+  @media screen and (max-width: 520px){
+    &{
+      font-size: 14px;
+    }
+  }
 `;
 
 function Timer ({timer, toggleTimer, updateTimer, resetTimer, deleteTimer}) {
